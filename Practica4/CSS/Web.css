@@ -1,0 +1,132 @@
+*{
+    font-family: 'Bubblegum Sans', cursive;
+font-family: 'Gochi Hand', cursive;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Wix Madefor Text', sans-serif;
+}
+
+a{
+    color: #0576FD;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_izquierdo{
+    display: flex;
+    flex-direction: row;
+}
+
+.header_izquierdo p{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 2px solid #000;
+}
+
+.header_derecho{
+    display: flex;
+    flex-direction: row;
+}
+
+.header_derecho p:first-child{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 2px solid #000;
+}
+
+.header_derecho p:nth-child(2){
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px; /* jugar con este cuando ya este acabado el main */
+    padding-left: 125px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.Titulo{
+    text-align: center;
+    font-size: 3em;
+}
+h1{
+    display: inline;
+}
+
+.Busqueda{
+    display: flex;
+    justify-content: center;
+}
+
+.Busqueda p{
+    margin-left: 15px;
+}
+
+input{
+    border: 2px solid #000;
+    border-radius: 6px;
+    width: 75%;
+    padding-top: 6px;
+    height: 35px;
+}
+
+::placeholder{
+    font-size: 22px;
+}
+
+.Sugerencias{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 90px;
+}
+
+.Sugerencias p{
+    border: 3px solid #000;
+    padding: 3px;
+    box-shadow: 8px 10px 0px 1px #000;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.problemas{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.problemas p:first-child{
+    border-right: 2px solid #000;
+    padding-right: 10px;
+}
+
+.problemas p:nth-child(2){
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.problemas p:nth-child(3){
+    border-left: 2px solid #000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.copy{
+    text-align: center;
+    padding-left: 35px;
+}

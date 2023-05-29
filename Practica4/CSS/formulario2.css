@@ -1,0 +1,289 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+    color: #fff;
+}
+
+body{
+    background-color: #262626;
+}
+
+section{
+    background-color:#313131;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+  
+#contenedor form {
+    margin-top: 16px;
+    margin-left: 2px;
+}
+ 
+#numeros{
+    display: flex;
+    flex-direction: row;
+}
+
+/*  Inputs */
+input,select{
+    border-radius: 5px;
+    background: #3C3C3C;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+select{
+    color: #787676;
+}
+
+p{
+    color: #fff;
+}
+
+option{
+    color: #000;
+    background-color: #fff;
+}
+
+input{
+    color: #787676;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input[type="week"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+::placeholder{
+    color: #787676;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+}
+
+/*  Animations  */
+
+@keyframes rojo{
+    0%{
+        color: #fff;
+    }
+    12%{
+        color:#FF0000;
+    }
+
+}
+
+#seccion1 p:first-child{
+    animation: rojo 5s infinite;
+}
+
+@keyframes naranja {
+    0%{
+        color: #fff;
+    }
+    24%{
+        color: #ffa500;
+    }    
+}
+
+#seccion1 p:nth-child(2){
+    animation: naranja 5s infinite;
+}
+
+@keyframes amarillo {
+    0%{
+        color: #fff;
+    }
+    36%{
+        color: #ffff00;
+    }
+}
+
+#seccion1 p:nth-child(3){
+    animation: amarillo 5s infinite;
+}
+
+@keyframes verde {
+    0%{
+        color: #fff;
+    }
+    48%{
+        color: #adff2f;
+    }
+}
+
+#seccion1 p:nth-child(4){
+    animation: verde 5s infinite;
+}
+
+@keyframes azul {
+    0%{
+        color: #fff;
+    }
+    60%{
+        color: #0090FF;
+    }
+}
+
+#seccion1 p:nth-child(5){
+    animation: azul 5s infinite;
+}
+
+@keyframes azul_cielo{
+    0%{
+        color: #fff;
+    }
+    72%{
+        color: #00EEFF;
+    }
+}
+
+#numeros p:first-child{
+    animation: azul_cielo 5s infinite;
+}
+
+@keyframes morado {
+        0%{
+            color: #fff;
+        }
+        84%{
+            color: #FF00EE;
+        }
+}
+
+#seccion2 p:first-child{
+    animation: morado 5s infinite;
+}
+
+@keyframes rosa {
+    0%{
+        color: #fff;
+    }
+    96%{
+        color: #ff006f;
+    }
+}
+
+#seccion2 p:nth-child(2){
+    animation: rosa 5s infinite;
+}
+
+@keyframes rbg {
+    0%{
+        color: #fff;
+    }
+    12%{
+        color:#FF0000;
+    }
+    24%{
+        color: #ffa500;
+    }
+    36%{
+        color: #ffff00;
+    }
+    48%{
+        color: #adff2f;
+    }
+    60%{
+        color: #0090FF;
+    }
+    72%{
+        color: #00EEFF;
+    }
+    84%{
+        color: #FF00EE;
+    }
+    96%{
+        color: #ff006f;
+    }
+}
+
+#seccion2 p:nth-child(3){
+    animation: rbg 5s infinite;
+}
+
+/* cosas extras*/
+
+#uno:focus{
+    border-bottom: 2px solid #FF0000;
+    transition: .5s;
+}
+
+#dos:focus{
+    border-bottom: 2px solid #ffa500;
+    transition: .5s;
+}
+
+#tres:focus{
+    border-bottom: 2px solid #ffff00;
+    transition: .5s;
+}
+
+#cuatro:focus{
+    border-bottom: 2px solid #adff2f;
+    transition: .5s;
+}
+
+#cinco:focus{
+    border-bottom: 2px solid #0090FF;
+    transition: .5s;
+}
+
+#seis:focus{
+    border-bottom: 2px solid #FF00EE;
+    transition: .5s;
+}
+
+#siete:focus{
+    border-bottom:  2px solid #ff006f;
+    transition: .5s;
+}
+
+select:focus{
+    border-bottom: 2px solid #00EEFF;
+    transition: 1s;
+}
+
+@keyframes rbg-border {
+    0%{
+        border-bottom: 2px solid #fff;
+    }
+    12%{
+        cborder-bottom: 2px solid #FF0000;
+    }
+    24%{
+        border-bottom: 2px solid #ffa500;
+    }
+    36%{
+        border-bottom: 2px solid #ffff00;
+    }
+    48%{
+        border-bottom: 2px solid #adff2f;
+    }
+    60%{
+        border-bottom: 2px solid #0090FF;
+    }
+    72%{
+        border-bottom: 2px solid #00EEFF;
+    }
+    84%{
+        border-bottom: 2px solid #FF00EE;
+    }
+    96%{
+        border-bottom: 2px solid #ff006f;
+    }
+}
+
+#ocho:focus{
+    animation: rbg-border 2s infinite;
+}

@@ -1,0 +1,173 @@
+*{
+    font-family: 'Wix Madefor Text', sans-serif;
+}
+
+header{
+    background: #FF337c;
+    border-radius: 25px;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+h1{
+    text-align: center;
+    width: 100%;
+}
+
+/*  Datos personales */
+section{
+    display: flex;
+    margin-right: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.seccion{
+    background: #00ff;
+    border: 5px solid #00ff;
+    border-radius: 25px;
+    width: 475px;
+    height: 678px;
+    margin-bottom: 112px;
+}
+section h2{
+    color: #fff;
+    text-align: center;
+}
+
+.foto{
+    background-color: #fff;
+    text-align: center;
+    height: 300px;
+}
+
+img{
+    margin: 20px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.datos{
+    background: #fff;;
+    padding-bottom: 1px;
+    border-bottom-left-radius: 25px ;
+    border-bottom-right-radius: 25px;
+}
+
+.datos p{
+    margin-left:8px;
+    margin-right: 8px;
+}
+
+.datos p:nth-child(1) {
+    margin-top: 5px;
+    padding-top:10px;
+}
+
+.orden{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seccion_columna{
+    background: #00FA5F;
+    margin-left: 50px;
+    border: 5px solid #00FA5F;
+    border-radius: 25px;
+    width: 80%;
+    height: auto;
+}
+
+#experencia{
+    background: #fff;
+}
+
+#experencia p{
+    margin: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+#educacion{
+    background: #fff;;
+    padding-bottom: 1px;
+    border-bottom-left-radius: 25px ;
+    border-bottom-right-radius: 25px;
+}
+
+
+#educacion p{
+    margin-left:8px;
+    margin-right: 8px;
+}
+
+nav{
+    background: #000;
+    color: #fff;
+    bottom: 5px;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 80%;
+
+}
+
+nav h1{
+    text-align: center;
+}
+
+article{
+    margin-top: 25px;
+    margin-left: 50px;
+    border: 5px solid #000;
+    background: #000;
+    border-radius: 25px;
+    width: 80%;
+}
+
+article ul{
+    background: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+article:nth-child(2){
+    background: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: q0px;
+}
+
+article p{
+    background: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#texto{
+    background: #fff;;
+    padding-bottom: 1px;
+    border-bottom-left-radius: 25px ;
+    border-bottom-right-radius: 25px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+article p:nth-child(1){
+    background: none;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+footer{
+    border: 5px  solid #000;
+    border-radius: 25px;
+    margin-top: 25px;
+}
