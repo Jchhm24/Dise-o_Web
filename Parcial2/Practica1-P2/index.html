@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practica1-Parcial2</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <p id="p1">Hola Mundo</p>
+
+    <h1 id="titulo">Encabezado Viejo</h1>
+
+    <!-- Búsqueda de elementos HTML por nombre de etiqueta.-->
+   
+   <!-- el siguiente codigo que esta comentado descomentelo para ver lo que pase
+        en la consola lo mismo con el script del insiso B -->
+    <!-- <p id="main"></p>
+
+    <p id="p">Hola maestra</p> -->
+
+
+    <!-- Encontrar elementos por nombre de clases. -->
+
+    <!-- <p class="intro">texto de clase</p>
+    <p class="intro">texto de clase 2</p> -->
+
+
+    <!-- Búsqueda de elementos HTML mediante selectores de CSS -->
+
+    <p class="intro">este es un ejemplo</p>
+    <p class="intro">este es otro ejemplo</p>
+
+    <ul>
+        <li>Optimus prime</li>
+        <li>Bumbleble</li>
+        <li>Grimlock</li>
+        <li>Predaking</li>
+        <li>Megatron</li>
+    </ul>
+
+    <!-- Elementos con la clase list -->
+    <p class="list">soy de la clase list</p>
+    <h1 class="list">soy de la clase list</h1>
+    <input type="text" class="list" placeholder="soy de la clase list">
+    
+    <ul class="list">
+        <li>soy de la clase list</li>
+    </ul>
+
+    <h1>Prueba de cambio de color</h1>
+
+    <!-- Búsqueda de elementos HTML por colecciones de objetos HTML. -->
+
+    <form id="form1">
+        <input type="text" placeholder="estoy en un forms">
+        <input type="email" placeholder="yo tambien estoy en un forms">
+    </form>
+
+    <!-- Usando el método addEventListener() para escuchar eventos en la página -->
+
+    <input type="button" value="Da click aquí" id="btn">
+
+    <!-- Validación de formulario -->
+    <!-- A) -->
+    <h2><br>Formulario de Validación</h2>
+    <form id="miFormulario" onsubmit="return validarFormulario()">
+        <input type="text" id="nombre">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- B) Formulario numerico -->
+    
+    <h2><br>Formulario numerico</h2>
+
+    <form id="numerico" onsubmit=" miFunction()">
+        <input type="number" id="numero" placeholder="Escoje un numero del 1 al 10">
+        <input type="button" value="onclick" onclick="miFunction()">
+        <p id="DEMO"></p>
+    </form>
+
+    <!-- Cambiar el valor de un atributo -->
+    <!-- A) -->
+    <img src="warden.jpg" alt="warden" id="miImagen">
+
+    <!-- Contenido dinámico -->
+    <!-- A) -->
+    <p></p>
+    <h1 id="Demo"></h1>
+
+    <script src="index.js"></script>
+</body>
+</html>
