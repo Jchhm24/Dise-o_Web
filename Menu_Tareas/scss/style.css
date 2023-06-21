@@ -1,5 +1,4 @@
 @charset "UTF-8";
-<<<<<<< HEAD
 /******************************** Titulo ****************************/
 .separador {
   border-left: 2px solid #fff;
@@ -61,7 +60,6 @@ nav {
 
 .bg-cristal-black {
   /* From https://css.glass */
-  /* From https://css.glass */
   background: rgba(76, 76, 76, 0.28);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -113,10 +111,6 @@ video {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-=======
-.bordes_gruesos {
-  height: 30px;
->>>>>>> 948ea17cb6cc21cca435afd7c5dbae33b6bc6b7a
 }
 
 /*!
