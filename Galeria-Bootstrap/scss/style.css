@@ -13,10 +13,11 @@
   border: 2px solid rgba(76, 76, 76, 0.75);
 }
 
-img {
+.details-img {
   margin-top: 12px;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 5px solid #000;
 }
 
 /*********************************Background**********************++++++*/
@@ -46,11 +47,11 @@ img {
   position: fixed;
   z-index: -1;
   /* From https://css.glass */
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.75);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 /*!
