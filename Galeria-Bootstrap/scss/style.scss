@@ -1,5 +1,56 @@
 *{
     $font-family-sans-serif: 'Poppins', sans-serif;
 }
+.Margen-contenedor{
+    margin: 25px 150px;  
+}
+
+.bg-cristal-black{
+    /* From https://css.glass */
+    background: rgba(76, 76, 76, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 2px solid rgba(76, 76, 76, 0.75);
+}
+
+img{
+    margin-top: 12px;
+    object-fit: cover;
+}
+/*********************************Background**********************++++++*/
+#Bg_Gif{
+    min-width: 100vh;
+    position: relative;
+}
+
+.bg-fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.glassmorphism{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    z-index: -1;
+
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.3);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+}
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
