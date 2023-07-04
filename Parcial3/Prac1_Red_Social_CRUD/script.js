@@ -17,7 +17,7 @@ let formValidation = () => {
   }
 };
 
-let date={};
+let data={};
 
 let acceptData = () => {
   data["text"] = textarea.value;
@@ -26,12 +26,12 @@ let acceptData = () => {
 
 let createPost = () => {
   post.innerHTML += `
-    <div>
-      <p>${data.text}</p>
-      <span>
-        <i onclick="editpost(this)" class="fas fa-edit"></i>
-        <i onclick="deletepost(this)" class="fas fa-trash-alt"></i>
-      </span>
+  <div class="public">
+        <p class="comentario">${data.text}</p>
+        <span class="options">
+            <i onclick="editpost(this)" class="fas fa-edit"></i>
+            <i onclick="deletepost(this)" class="fas fa-trash-alt"></i>
+        </span>
     </div>
     `
     textarea.value = "";

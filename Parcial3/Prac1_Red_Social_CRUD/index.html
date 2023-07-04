@@ -6,8 +6,13 @@
     <title>Red Social</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="Bg">
     <h1>CRUD Red social</h1>
     <div class="container">
        <div class="left">
@@ -22,21 +27,24 @@
        </div> 
        <div class="right">
         <h3>Tus comentarios estan aqui</h3>
+        
+        <!-- Div del comentario de ejemplo -->
         <div id="post">
-
-            <!-- Div del comentario de ejemplo -->
-
-            <div>
-                <p>Comentario 1</p>
+            <div class="public">
+                <p class="comentario">Comentario 1</p>
                 <span class="options">
                     <i onclick="editpost(this)" class="fas fa-edit"></i>
                     <i onclick="deletepost(this)" class="fas fa-trash-alt"></i>
                 </span>
             </div>
-            
         </div>
+
        </div>
     </div>
+
+    <img src="BG/background.jpeg" alt="" class="bg-fondo">
+    <div class="glassmorphism"></div>   <!--  editar despues -->
+
 </body>
 <script src="script.js"></script>
 </html>
