@@ -22,10 +22,11 @@ let data={};
 let acceptData = () => {
   data["text"] = textarea.value;
   createPost();
+  modal_close(); /* función agregada*/ 
 };
 
 let createPost = () => {
-  let currentDate = new Date().toLocaleString(); // Obtener la fecha actual junto la hora
+  let currentDate = new Date().toLocaleString(); // Obtener la fecha actual
 
   post.innerHTML += `
     <div class="public">
@@ -40,13 +41,29 @@ let createPost = () => {
   textarea.value = "";
 };
 
-
 // Eventos para editar y eliminar los comentarios
 let editpost = (e) => {
-    textarea.value = e.parentElement.previousElementSibling.innerHTML;
-    e.parentElement.parentElement.remove();
+  
+  textarea.value = e.parentElement.previousElementSibling.innerHTML;
+  e.parentElement.parentElement.remove();
+  modal_open();/* función agregada*/ 
 }
 
 let deletepost = (e) => {
-    e.parentElement.parentElement.remove();
+  e.parentElement.parentElement.remove();
 }
+
+/****************************** Modal *******************************+++*/
+
+//Abrir modal
+let modal_open=()=>{
+  modal.showModal();
+  /*
+    Este es un metodo del modal, lo va abrir
+    y lo va poner encima de todo el contenido
+  */
+};
+
+let modal_close=()=>{
+  modal.close(); //Con esto la ventana modal se va cerrar
+};

@@ -15,9 +15,34 @@
 <body id="Bg">
     <h1>CRUD Red social</h1>
 
-    <div class="container">
+    <!-- Inicio de la ventana modal -->
 
-        <div class="left">
+        <dialog id="modal"> <!-- La etiqueta dialog es una etiqueta para hacer ventanas modal más facil-->
+
+            <div class="left">
+                <form id="form">
+                    <label>Escribe un comentario...</label>
+                    <br>
+                    <textarea id="textarea" cols="30" rows="10"></textarea>
+                    <br>
+                    <div id="msg"></div>
+                    <div class="buttons">
+                        <button type="submit">Comentar</button>
+                        <button id="modal-close" onclick="modal_close(this)">Dejar de comentar</button>
+                    </div>
+                </form>
+            </div>
+            
+        </dialog>
+    <!-- Fin de la ventana modal -->
+
+    <div class="container">
+    
+    <button id="modal-open" class="open" onclick="modal_open(this)">Nuevo comentario</button> <!-- Boton para abrir modal-->
+
+    <!-- Formato original dle div -->
+
+        <!-- <div class="left">
             <form id="form">
                 <label>Escribe un comentario...</label>
                 <br>
@@ -26,7 +51,7 @@
                 <div id="msg"></div>
                 <button type="submit">Comentar</button>
             </form>
-        </div> 
+        </div>  -->
 
        <div class="right">
         <h3>Tus comentarios estan aqui</h3>
