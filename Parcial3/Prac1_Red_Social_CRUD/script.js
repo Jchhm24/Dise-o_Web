@@ -2,7 +2,6 @@ let form = document.getElementById("form");
 let textarea = document.getElementById("textarea");
 let msg = document.getElementById("msg");
 let post = document.getElementById("post");
-let fecha=document.getElementById("date");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -26,12 +25,11 @@ let acceptData = () => {
 };
 
 let createPost = () => {
-  let currentDate = new Date().toLocaleString(); // Obtener la fecha actual
-  fecha.innerHTML = "Fecha: " + currentDate.toString();
+  let currentDate = new Date().toLocaleString(); // Obtener la fecha actual junto la hora
 
   post.innerHTML += `
     <div class="public">
-      <p id="date">${currentDate.toString()}</p>
+      <p class="date">Fecha y hora publicado: ${currentDate.toString()}</p>
       <p class="comentario">${data.text}</p>
       <span class="options">
         <i onclick="editpost(this)" class="fas fa-edit"></i>

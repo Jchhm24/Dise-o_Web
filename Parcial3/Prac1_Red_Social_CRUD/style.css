@@ -141,7 +141,7 @@ label, h3,h1{
     -moz-box-shadow: 10px 11px 31px 9px rgba(0,0,0,0.3);
 }
 
-.comentario{
+.comentario,.date{
     word-wrap: break-word; /* Propiedad para que el texto no se salga */ 
     overflow-y: auto;
     color: #fff;
