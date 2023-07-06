@@ -14,14 +14,19 @@ function getCharacters(done) {
             const article = document.createRange().createContextualFragment(
                 // html
                 `
-                <article>
-                <div class="img-container">
-                    <img src="${personaje.image}" alt="personaje">
+                <div class="contenido">
+
+                    <div class="img-container">
+                        <img class="personajes" src="${personaje.image}" alt="personaje">
+                    </div> 
+
+                    <span class="linea"></span>
+                    
+                    <div class="texts"> 
+                        <h2>${personaje.name}</h2>
+                        <span>${personaje.status}</span>
+                    </div>
                 </div>
-    
-                <h2>${personaje.name}</h2>
-                <span>${personaje.status}</span>
-            </article>
             `);
             const main = document.querySelector("main");
             main.append(article);
