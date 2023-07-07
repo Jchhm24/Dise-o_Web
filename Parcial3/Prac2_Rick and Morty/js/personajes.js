@@ -12,7 +12,7 @@ function getCharacters(done) {
         data.results.forEach(personaje =>{
 
             const article = document.createRange().createContextualFragment(
-                // html
+                // html modificado, asi que por lo tanto no es el html original
                 `
                 <div class="contenido">
 
