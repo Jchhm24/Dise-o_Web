@@ -36,13 +36,13 @@ function getCharacters(done) {
     document.getElementById("nav").innerHTML=`
     <ul>
         <li>
-            <a href="/Leccion1/Elementosbasicos.html">Elementos</a>
+            <a href="#">Elementos</a>
         </li>
         <li>
-            <a href="/Leccion2/Index.html">Inicio</a>
+            <a href="#">Inicio</a>
         </li>
         <li>
-            <a href="/Leccion2/maquetado2-2.html">Maquetado</a>
+            <a href="#">Maquetado</a>
         </li>
         
     </ul>`;   

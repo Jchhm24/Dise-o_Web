@@ -34,9 +34,13 @@ main{
     border-radius: 15px;
 }
 
+nav{
+    background-color:#040033;
+    border-bottom: 4px solid #37DE07;
+}
+
 ul{
     list-style-type: none;
-    background-color: #100744;
     overflow: hidden;
 }
 li{
@@ -47,12 +51,13 @@ li a{
     display: block;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 25px 15px;
     text-decoration: none;
 }
 
 li a:hover{
-background-color: chartreuse;
+    background-color: #37DE07;
+    /* background-color: chartreuse; */
 }
 h5{
     color:chocolate;
@@ -60,7 +65,6 @@ h5{
 h6{
     color:seagreen;
 }
-
 /******************************* New *******************************/
 .logo-contenedor{
     display: flex;
@@ -76,6 +80,11 @@ h6{
 .texts{
     margin-top: 15px;
     text-align: center;
+    position: relative;
+}
+
+h2{
+    margin-bottom: 12px;
 }
 
 .contenido{
@@ -83,7 +92,6 @@ h6{
     border: 2px solid #383838;
     color: #fff;
     word-wrap: break-word;
-    
 }
 
 .personajes{
@@ -99,7 +107,7 @@ h6{
 }
 
 .contenido:hover{
-    /* From https://css.glass */
+
     background: rgba(40, 40, 40, 0.5);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
